@@ -1,0 +1,15 @@
+[Unit]
+Description=Yuketang response-code sampler (window_watch)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/yktsign
+ExecStart=/usr/bin/python3 /opt/yktsign-check/window_watch.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/opt/yktsign/data/window_watch.log
+StandardError=append:/opt/yktsign/data/window_watch.log
+
+[Install]
+WantedBy=multi-user.target

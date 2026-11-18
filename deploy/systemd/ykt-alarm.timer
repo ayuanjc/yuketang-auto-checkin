@@ -1,0 +1,11 @@
+[Unit]
+Description=ykt 告警巡检（每 5 分钟）
+
+[Timer]
+OnBootSec=120
+OnUnitActiveSec=300
+AccuracySec=30s
+Unit=ykt-alarm.service
+
+[Install]
+WantedBy=timers.target

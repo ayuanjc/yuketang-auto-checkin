@@ -1,0 +1,19 @@
+# secrets
+.env
+*.env
+*.token
+probe.token
+cookies.json
+ck.txt
+key.txt
+.state/
+data/
+logs/
+*.log
+*.db
+*.db-wal
+*.db-shm
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
